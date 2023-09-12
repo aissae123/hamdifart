@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="life1.css">
+  <style>
+    body {
+      background: linear-gradient(45deg, #ff1493, #ff8c00, #ff00ff);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    video {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h4 class="o">DID your MoM Know You are Gay!!!<br>Pls don't lie to me negroo</h4>
+  <button id="showVideoYes">Yes</button>
+  <button id="showVideoNo">No</button>
+  <div id="videoContainer" class="hidden">
+    <video controls>
+      <source src="98.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <script>
+    const buttonYes = document.getElementById("showVideoYes");
+    const buttonNo = document.getElementById("showVideoNo");
+    const videoContainer = document.getElementById("videoContainer");
+
+    buttonYes.addEventListener("click", function() {
+      videoContainer.classList.remove("hidden");
+    });
+
+    buttonNo.addEventListener("click", function() {
+      videoContainer.classList.remove("hidden");
+    });
+  </script>
+</body>
+</html>

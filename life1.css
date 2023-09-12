@@ -1,0 +1,20 @@
+body{
+   background-image: url("11.jpg");
+   background-size: 50%;
+   background-repeat: no-repeat;
+}
+.l{
+	font-size: 100px;
+	background: linear-gradient(to bottom, #FF1493, #FF8C00, #FFD700, #008000, #0000FF, #9400D3);
+     position: relative;
+     text-align: center;
+}
+.p{
+	font-size: 100px;
+	text-align: center;
+}
+.o{
+	font-size: 100px;
+	text-align: center;
+	background: linear-gradient(to bottom, #FF1493, #FF8C00, #FFD700, #008000, #0000FF, #9400D3);
+}

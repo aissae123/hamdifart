@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="life1.css">
+    <title>Confirmation Button</title>
+  
+<body>
+	<h1 class="p">Yo Nigga<br>
+		Are You Gayy </h1>
+  <button id="showVideoButton">Yes</button>
+  <div id="videoContainer" class="hidden">
+    <video controls>
+      <source src="your-video-source.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <style >
+    const button = document.getElementById("showVideoButton");
+    const videoContainer = document.getElementById("videoContainer");
+
+    button.addEventListener("click", function() {
+      document.body.classList.add("rainbow-background");
+      videoContainer.classList.remove("hidden");
+    });
+    body {
+      transition: background-color 0.5s;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .rainbow-background {
+      background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8000ff, #ff00ff);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    video {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+        body {
+            background-color: #E5E5E5; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #confirmationBox {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="confirmButton">No Damnn!!</button>
+
+    <div id="confirmationBox" style="display: none;">
+        <p>Are you sure?</p>
+        <button id="yesButton">Yes I am </button>
+    </div>
+
+    <script>
+        const confirmButton = document.getElementById("confirmButton");
+        const confirmationBox = document.getElementById("confirmationBox");
+        const yesButton = document.getElementById("yesButton");
+
+        confirmButton.addEventListener("click", () => {
+            confirmationBox.style.display = "block";
+        });
+
+        yesButton.addEventListener("click", () => {
+            // Redirect to another HTML file (change 'anotherPage.html' to your desired file)
+            window.location.href = "life4.html";
+        });
+    </script>
+</body>
+</html>
